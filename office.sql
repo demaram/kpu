@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2017 at 11:27 AM
+-- Generation Time: Sep 17, 2017 at 08:16 PM
 -- Server version: 10.1.22-MariaDB
 -- PHP Version: 7.0.18
 
@@ -108,7 +108,6 @@ INSERT INTO `pk` (`id_pk`, `no_pk_vendor`, `no_kpu`) VALUES
 (3, '003000.PK/UT/HK.00/2014', '001.PK/KPU/IX/2014'),
 (4, '170700.PK/UT/HK.00/2015', '006.PK/KPU/IX/2015'),
 (5, '131300.PK/UT/HK.02/2016', '0005.PK/KPU/VII/2016'),
-(6, 'TEST DATA PK', 'Test data PK 111 '),
 (7, '131300.PK/UT/HK.02/2010', '006.AMD/KPU/VIII/2015');
 
 -- --------------------------------------------------------
@@ -153,12 +152,9 @@ INSERT INTO `spk` (`id_spk`, `id_histori`, `id_pk`, `perihal`, `no_spk`, `vendor
 (43, 0, 5, 'Reseptionis', '054800.S/MAS-UT/KP.00/2017', 'PGN MAS', '2017-05-01', '2017-12-31', '', 1, 'Rizky', '', 1),
 (44, 0, 5, 'Tenaga Pengemudi', '026700.S/UT/KP.00/2017', 'PGN MAS', '2017-03-01', '2017-08-31', '', 3, 'Raffiudin', '', 1),
 (45, 0, 5, 'Tenaga Pengemudi', '041400.SPK/MAS-UT/KP.00/2017', 'PGN MAS', '2017-04-01', '2017-12-31', '', 71, 'Raffiudin', '', 1),
-(46, 0, 5, 'Tenaga Pengemudi', '041500.SPK/MAS-UT/KP.00/2017', 'PGN MAS', '2017-04-01', '2017-12-31', '', 2, 'Ari Kusumayadi', '', 1),
-(47, 0, 6, 'Test', 'Test Nomor SPK', 'Nama Vendor', '2017-07-01', '2017-09-01', 'Test', 2, 'Mutya', '', 1),
-(48, 0, 6, 'Tenaga Pengemudi', 'test spk', 'PGN MAS', '2017-07-01', '2017-07-17', 'Jakarta', 2, 'Mutya', 'Belum Diperpanjang', 0),
-(49, 0, 6, 'Jasa ', '075900.S/UT/KP.00.01/2016', 'PGN MAS', '2017-07-01', '2017-08-09', '24123413', 1, 'Rizky', 'Perpanjangan 075900.S/UT/KP.00.01/2016', 1),
-(50, 0, 7, 'Tenaga Pengemudi', '075900.S/UT/KP.00.01/2016', 'PGN MAS', '2017-07-01', '2017-08-06', 'Bekasi', 1, 'Mutya', '', 0),
-(51, 50, 7, 'Administrator', '075900.S/UT/KP.00.01/2017', 'PGN MAS', '2017-07-01', '2017-08-31', 'Jakarta', 1, 'Ari Kusumayadi', 'Perpanjangan 075900.S/UT/KP.00.01/2016', 1);
+(46, 0, 5, 'Tenaga Pengemudi', '041500.SPK/MAS-UT/KP.00/2017', 'PGN MAS', '2017-04-01', '2017-08-31', 'Bekasi', 2, 'Ari Kusumayadi', '', 1),
+(51, 50, 7, 'Administrator', '075900.S/UT/KP.00.01/2017', 'PGN MAS', '2017-07-01', '2017-08-01', 'Jakarta', 1, 'Ari Kusumayadi', 'Perpanjangan 075900.S/UT/KP.00.01/2016', 0),
+(58, 50, 7, 'asfasf', 'asdfasdf', 'asfasdfas', '2017-07-01', '2017-08-31', 'fasdfasdf', 52345, 'asfasf', 'asdfasdf', 1);
 
 -- --------------------------------------------------------
 
@@ -193,7 +189,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `photo`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`, `occupation`) VALUES
-(1, '127.0.0.1', 'administrator', '$2y$08$ymuTjFumo25E.iA0eQGu9OfLu6SoanZRVzzeys3oVmvmDrldQ3Bky', '', 'admin@kpu.com', '92images.png', '', NULL, NULL, NULL, 1268889823, 1500621891, 1, 'admin', 'istrator', 'ADMIN', '09129596910', 'Managers');
+(1, '127.0.0.1', 'administrator', '$2y$08$ymuTjFumo25E.iA0eQGu9OfLu6SoanZRVzzeys3oVmvmDrldQ3Bky', '', 'admin@kpu.com', '72images.png', '', NULL, NULL, NULL, 1268889823, 1501269691, 1, 'admin', 'istrator', 'ADMIN', '09129596910', 'Managers');
 
 -- --------------------------------------------------------
 
@@ -293,7 +289,7 @@ ALTER TABLE `pk`
 -- AUTO_INCREMENT for table `spk`
 --
 ALTER TABLE `spk`
-  MODIFY `id_spk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id_spk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 --
 -- AUTO_INCREMENT for table `users`
 --
